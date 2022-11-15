@@ -1,0 +1,1 @@
+[16-Jul-2021 14:59:28 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2365432 bytes) in /home/kenyapaeds/admin_2/vendor/intervention/image/src/Intervention/Image/File.php on line 56

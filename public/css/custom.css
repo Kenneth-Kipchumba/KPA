@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('font/ProximaNova-Regular.otf');
+  
+}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('font/ProximaNova-Bold.otf');
+  
+}
+
+body{
+    font-family:'Roboto',Segoe UI, Arial, sans-serif;
+}
+
+
+.ck-editor__editable,
+textarea {
+    min-height: 150px;
+}
+
+.datatable {
+    width: 100% !important;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dt-buttons {
+    margin-bottom: 0.333em;
+    margin-top: .2rem;
+}
+
+.dataTables_filter {
+    margin-right: .2rem;
+}
+
+.dt-buttons .btn {
+    margin-left: 0.333em;
+    border-radius: 0;
+}
+
+.table.datatable {
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+table.dataTable thead th {
+    border-bottom: 2px solid #c8ced3;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 1px solid #c8ced3;
+}
+
+.select2 {
+    max-width: 100%;
+    width: 100% !important;
+}
+
+.select2-selection__rendered {
+    padding-bottom: 0px !important;
+}
+
+.has-error .invalid-feedback {
+    display: block !important;
+}
+
+.btn-info,
+.badge-info {
+    color: white;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background-image: none;
+}
+
+.sidebar .nav-item {
+    cursor: pointer;
+}
+
+.btn-default {
+    color: #23282c;
+    background-color: #f0f3f5;
+    border-color: #f0f3f5;
+}
+
+
+.btn-default.focus,
+.btn-default:focus {
+    box-shadow: 0 0 0 .2rem rgba(209, 213, 215, .5);
+}
+
+.btn-default:hover {
+    color: #23282c;
+    background-color: #d9e1e6;
+    border-color: #d1dbe1;
+}
+
+.btn-group-xs > .btn,
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.searchable-title {
+    font-weight: bold;
+}
+.searchable-fields {
+    padding-left:5px;
+}
+.searchable-link {
+    padding:0 5px 0 5px;
+}
+.searchable-link:hover   {
+    cursor: pointer;
+    background: #eaeaea;
+}
+.select2-results__option {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.form-group .required::after {
+    content: " *";
+    color: red;
+}
+
+.form-check.is-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+.c-sidebar-brand .c-sidebar-brand-full:hover {
+    color: inherit;
+}
+
+.c-header .row{
+    width:100%;
+}
+
+.c-header-nav{
+    min-height:0px !important;
+}
+
+.dropzone{
+	border: 2px dashed rgba(0,0,0,0.3) !important;
+}
+
+.c-main > .container-fluid, .c-main > .container-lg, .c-main > .container-md, .c-main > .container-sm, .c-main > .container-xl{
+    padding-right:15px !important;
+    padding-left:15px !important;
+}
+.c-main {
+    padding-top: 1rem;
+}
+.card img{
+    border-radius:5px;
+}
+.card-header{
+    font-size:24px;
+    letter-spacing:0px;
+}
+
+.card-header a, .card-header button, .card-header .text-right{
+    font-size:14px;
+    letter-spacing:-0.2px;
+}
+
+.card-header .form-group{
+    text-align:left;
+}
+
+table.datatable{
+    font-size:12px !important;
+}
+
+.list .dt-buttons{
+    display:none;
+}
+
+.clr {
+    background-color: #00cccc;
+    color: white !important;
+}
+div.dt-buttons {
+    padding-left: 20px;
+    float: right;
+}
+table tr { /* FOR PRINTING */
+    display: table-row; /* Here*/
+}
+
+table thead tr { /* Override for the above - need to fix */
+    display: table-row; /* Here*/
+}
+
+.card .card{
+    border:none;
+}
+
+table.doc td{
+    border-color:#FFF !important;
+}
+.print-only {
+    display:none;
+}
+table.dataTable > tbody > tr.child ul.dtr-details  {
+
+    width: 100%;
+    float: left;
+}
+table.dataTable > tbody > tr.child ul.dtr-details > li {
+    border-bottom: 1px solid #efefef;
+    padding: 0.5em 0;
+    width: 30%;
+    float: left;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .dt-buttons{
+      display:none;
+    }
+    .card-header .btn-warning{
+        display:none;
+    }
+    .card-header{
+        font-size:18px;
+        font-weight:bold
+    }
+    .card-header .col-md-6{ 
+        width:50%! important; 
+    }
+
+    table.dataTable > tbody > tr.child ul.dtr-details > li {
+        width: 100%;
+        float: left;
+    }
+   
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-tabs-boxed.nav-tabs-boxed-left, .nav-tabs-boxed.nav-tabs-boxed-right {
+        display: block !important;
+    }
+
+    table.dataTable > tbody > tr.child ul.dtr-details > li {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+@page { size: auto;  margin: 0mm; }
+@media only print{
+    *{
+        letter-spacing: 0px;
+        font-family:Arial;
+        text-decoration:none;
+    }
+    .dataTables_length,.dataTables_filter,.dataTables_info,.dataTables_paginate  {
+      display:none;
+    }
+    .card{
+        border:none !important;
+    }
+    h2{
+        font-size:20px !important;
+    }
+    .btn {
+        display:none;
+    }
+    .print-only {
+        display:block;
+    }
+    th,td{
+        display:table-cell;
+    }
+    footer {page-break-after: always;}
+}
+
+embed.pdfobject{
+    min-height:750px;
+}
+
+a.btn-success{
+    color:#FFF !important;
+}
+
+#pdf-viewer .info{
+    padding:50px;
+    text-align:center;
+    color:#bbc1c8;
+    background:#eff3f7;
+}
+
+#pdf-viewer i{
+    font-size:48px;
+}
+
+
+#clock {
+width: 100%;
+background-color: #EFF3F7;
+padding:30px 30px 60px 30px;
+margin-bottom:10px;
+color: #303C54;
+display: flex;
+align-items: center;
+justify-content: left;
+}
+#clock p {
+    font-size:14px;
+    margin:0px 0 5px 0;
+ }
+
+#clock h2 {
+   font-size:26px;
+   margin:0px;
+}
+#clock h3 {
+    font-size:36px;
+    font-weight:bold;
+    margin:-20px 0px;
+ }
+
+ .nav-tabs-boxed .tab-content {
+    color: #3C4B64;
+}
+
+.nav-tabs-boxed-left ul li{
+    width:100%;
+     
+}
+.b-none{
+    border:none !important;
+}
+
+.nav-tabs-boxed-left .nav {
+    display: table !important;
+
+}
+
+a h2{
+    color:#0D86FF !important;
+    text-decoration:none;
+}
+a{
+    text-decoration:none !important;
+}
+table.mid p{
+    font-size:16px;
+    margin-bottom:0;
+}
+
+.mid{
+    /* font-family: "Proxima Nova", Segoe UI;*/
+    line-height: 2.0 !important;
+}
+ 
+.text-value{
+    font-size:1.25rem;
+}
+
+.nav-tabs .nav-link {
+    background: rgba(255,255,255,0.2);
+}
+
+h2 span.sub{
+    color:#CCC;
+}
+.h2, h2 {
+    font-size: 1.5rem;
+}
+.card-header .btn, .card-footer .btn {
+
+    padding: .375rem 1.75rem;
+    border-radius: 10.25rem;
+}
+
+.btn-warning{
+    background:#EEE;
+    border:1px solid #EEE;
+}
+
+.btn-warning:hover,.btn-warning:active,.btn-warning:focus,.btn-warning.focus{
+    background:#DDD;
+    border:1px solid #DDD;
+    box-shadow: 0 0 0 0.2rem rgba(224, 224, 224, 0.5);
+}
+
+.btn-warning:not(:disabled):not(.disabled):active,
+.show > .btn-warning.dropdown-toggle {
+    background:#CCC;
+    border:1px solid #CCC;
+    box-shadow: 0 0 0 0.2rem rgba(224, 224, 224, 0.5);
+}
+
+div.dataTables_wrapper div.dataTables_processing {
+
+    z-index: 999;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+    max-height: 470px !important;
+    overflow-y: auto;
+}
+
+table.table-form{
+    border-radius:10px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+
+
+.table tr{
+    border-top:1px solid #d8dbe0;
+}
+
+.c-sidebar {
+    background: #3955A5 !important;
+
+}
+
+.progress-bar {
+    min-width:2% !important;
+    transition: width 3s ease !important;
+
+}
+
+.ytp-share-button, .ytp-watch-later-button {
+display:none !important;
+}
