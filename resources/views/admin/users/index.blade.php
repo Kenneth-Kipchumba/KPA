@@ -6,9 +6,6 @@
                 <div class="col-md-6"> {{ trans('cruds.user.title_singular') }} {{ trans('global.list') }} </div>
                 <div class="col-md-6 text-right">
                     @can('user_create')
-                        <a href="{{ url('admin/active_members') }}" class="btn btn-info">
-                            Active Members
-                        </a>
                         <a class="btn btn-success" href="{{ route('admin.users.create') }}">
                             {{ trans('global.add') }} {{ trans('cruds.user.title_singular') }}
                         </a>
