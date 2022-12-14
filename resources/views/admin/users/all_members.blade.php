@@ -7,31 +7,40 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body style="background-image: url(https://images.pexels.com/photos/5452196/pexels-photo-5452196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
 
-<div class="container mt-3">
-  <img src="{{ asset('img/logo_kpa.png') }}" class="img img-thumbnail img-fluid" style="width: 10rem; height: 5rem;">
-  <h2>KPA MEMBERS</h2>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Member No</th>
-        <th>Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      @foreach($all_members as $member)
-      <tr>
-        <td>{{ $member->member_no }}</td>
-        <td>{{ $member->name }}</td>
-      </tr>
-      @endforeach
-    </tbody>
-    <tfoot>
-      {{ $all_members->links() }}
-    </tfoot>
-    
-  </table>
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="{{ asset('img/logo_kpa.png') }}" alt="KPA Logo" class="img img-thumbnail img-fluid" style="width: 10rem; height: 5rem;">
+      </a>
+    </div>
+  </nav>
+
+<div class="container mt-3 bg-dark" style="opacity: 0.8;">
+  <h3 class="text-white">KPA Members</h3>
+  <div class="table-responsive table-light">
+    <table class="table table-bordered table-dark">
+      <thead>
+        <tr>
+          <th>Member No</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        @foreach($all_members as $member)
+        <tr>
+          <td>{{ $member->member_no }}</td>
+          <td>{{ $member->name }}</td>
+        </tr>
+        @endforeach
+      </tbody>
+      <tfoot>
+        {{ $all_members->links() }}
+      </tfoot>
+      
+    </table>
+  </div>
 </div>
 
 </body>
