@@ -10,7 +10,7 @@ Route::get('/home', function () {
 });
 
 // Active Members
-Route::get('admin/active_members', 'Admin\UsersController@active_members');
+Route::get('admin/all_members', 'Admin\UsersController@all_members');
 
 Route::get('/donepayment', ['as' => 'paymentsuccess', 'uses'=>'Admin\HomeController@paymentsuccess']);
 Route::get('/paymentsuccess', 'Admin\HomeController@paymentsuccess');

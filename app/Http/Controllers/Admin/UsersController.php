@@ -137,16 +137,14 @@ class UsersController extends Controller
     /**
      * List if members who have paid
      */
-    public function active_members()
+    public function all_members()
     {
         $users = new User;
 
-        $data['active_members'] = $users->where('status', 2)->get();
-        // echo "<pre>";
-        // print_r($data['active_members']);exit;
-        // echo "</pre>";
+        //$data['active_members'] = $users->where('status', 2)->get();
+        $data['all_members'] = $users->paginate(20);
 
-        return view('admin.users.active_members', $data);
+        return view('admin.users.all_members', $data);
     }
 
     public function create()
