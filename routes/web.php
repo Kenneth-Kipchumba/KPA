@@ -9,6 +9,9 @@ Route::get('/home', function () {
     return redirect()->route('admin.home');
 });
 
+// Active Members
+Route::get('admin/active_members', 'Admin\UsersController@active_members');
+
 Route::get('/donepayment', ['as' => 'paymentsuccess', 'uses'=>'Admin\HomeController@paymentsuccess']);
 Route::get('/paymentsuccess', 'Admin\HomeController@paymentsuccess');
 Route::get('/paymentconfirmation', 'Admin\HomeController@paymentconfirmation');

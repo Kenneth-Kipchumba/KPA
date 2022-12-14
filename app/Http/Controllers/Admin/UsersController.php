@@ -134,6 +134,21 @@ class UsersController extends Controller
         return view('admin.users.index', compact('specializations', 'locations', 'roles'));
     }
 
+    /**
+     * List if members who have paid
+     */
+    public function active_members()
+    {
+        $users = new User;
+
+        $data['active_members'] = $users->where('status', 2)->get();
+        // echo "<pre>";
+        // print_r($data['active_members']);exit;
+        // echo "</pre>";
+
+        return view('admin.users.active_members', $data);
+    }
+
     public function create()
     {
         abort_if(Gate::denies('user_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');

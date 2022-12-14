@@ -201,7 +201,7 @@
             <div class="card-body p-0">
                 
             <a href="{{ route("admin.webinars.show",$webinar->id) }}">
-                <img src="{{ $webinar->image->url }}" width="100%" alt="{!! $webinar->image->thumbnail !!}"/>
+                <img src="{{ $webinar->image->url ?? '' }}" width="100%" alt="{!! $webinar->image->thumbnail ?? '' !!}"/>
             </a>
             <hr>
             
