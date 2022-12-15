@@ -19,7 +19,7 @@
   </nav>-->
 
 <div class="container mt-3">
-  <h3 class="text-white">KPA Members</h3>
+  <h3 class="text-white">Our Members</h3>
   <div class="table-responsive">
     <table class="table table-bordered">
       <thead>
@@ -29,7 +29,7 @@
         </tr>
       </thead>
       <tbody class="table-group-divider">
-        @foreach($all_members as $member)
+        @foreach($our_members as $member)
         <tr>
           <td>{{ $member->member_no }}</td>
           <td>{{ $member->name }}</td>
@@ -37,7 +37,7 @@
         @endforeach
       </tbody>
       <tfoot>
-        {{ $all_members->links() }}
+        {{ $our_members->links() }}
       </tfoot>
       
     </table>
