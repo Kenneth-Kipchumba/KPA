@@ -142,7 +142,7 @@ class UsersController extends Controller
         $users = new User;
 
         //$data['active_members'] = $users->where('status', 2)->get();
-        $data['our_members'] = $users->paginate(20);
+        $data['our_members'] = $users->where('status', '!=', 7)->paginate(20);
 
         return view('admin.users.our_members', $data);
     }
