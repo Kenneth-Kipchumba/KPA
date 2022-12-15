@@ -12,7 +12,7 @@
   <nav class="navbar navbar-expand-sm">
     <div class="container-fluid">
       <a href="#" class="navbar-brand">
-        <img src="{{ asset('img/logo_kpa.png') }}" alt="KPA Logo" class="img img-thumbnail img-fluid" style="width: 10rem; height: 5rem;">
+        <img src="{{ asset('img/logo_kpa.png') }}" alt="KPA Logo" class="img img-thumbnail img-fluid" style="width: 25rem; height: 5rem;">
       </a>
     </div>
   </nav>
