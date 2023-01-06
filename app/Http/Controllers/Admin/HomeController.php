@@ -286,7 +286,9 @@ class HomeController
         $lname = array_pop($words);
         $fname = implode(' ', $words);
 
-        $term = 'Membership '.date("Y");
+        //$term = 'Membership '.date("Y");
+        $term = 'Membership 2021';
+        //dd($term);
         $rate = Rate::where('name','LIKE','%'.$term.'%')->first();
 
         $details = array(
